@@ -1,0 +1,43 @@
+
+.\trained_eomt\1024-t=0.3-r=8-epoch=10.ckpt
+.\Validation_Dataset\fs_static\images\*.jpg
+    [MSP] AUPRC score:35.740267479883   FPR@95TPR:38.8063002943937    [Max_Logit] AUPRC score:35.82156904011191   FPR@95TPR:38.501813782058186    [Max_Entropy] AUPRC score:39.75993770888669   FPR@95TPR:38.728067001056715
+.\trained_eomt\eomt_cityscapes.bin
+.\Validation_Dataset\fs_static\images\*.jpg
+    [MSP] AUPRC score:54.39476021293911   FPR@95TPR:35.180263047224756    [Max_Logit] AUPRC score:54.535477536031806   FPR@95TPR:34.81427285972913    [Max_Entropy] AUPRC score:52.80890566719537   FPR@95TPR:35.09187584527838
+.\trained_eomt\1024-t=0.3-r=16-a=16-epoch=10.ckpt
+.\Validation_Dataset\fs_static\images\*.jpg
+    [MSP] AUPRC score:35.737295921017946   FPR@95TPR:37.56486912711473    [Max_Logit] AUPRC score:35.81980265310289   FPR@95TPR:37.241575728103804    [Max_Entropy] AUPRC score:39.934593310821974   FPR@95TPR:37.481982584493586
+.\trained_eomt\1024-t=0.3-r=32-a=64-epoch=10.ckpt
+.\Validation_Dataset\fs_static\images\*.jpg
+    [MSP] AUPRC score:37.12556048595334   FPR@95TPR:39.558427871517246    [Max_Logit] AUPRC score:37.203039792559025   FPR@95TPR:39.29399416908941    [Max_Entropy] AUPRC score:40.30177015127044   FPR@95TPR:39.46412272940834
+.\trained_eomt\1024-t=0.04-r=32-a=64-epoch=10.ckpt
+.\Validation_Dataset\fs_static\images\*.jpg
+    [MSP] AUPRC score:56.282677294430826   FPR@95TPR:38.40694061107667    [Max_Logit] AUPRC score:56.41889485514212   FPR@95TPR:38.16062262527456    [Max_Entropy] AUPRC score:54.62545052997913   FPR@95TPR:38.27742280821683
+.\trained_eomt\1024-t=0.01-r=32-a=64-epoch=10.ckpt
+.\Validation_Dataset\fs_static\images\*.jpg
+    [MSP] AUPRC score:48.952988203204924   FPR@95TPR:39.074303130506195    [Max_Logit] AUPRC score:49.09542464983854   FPR@95TPR:38.73205072753851    [Max_Entropy] AUPRC score:45.93615670938396   FPR@95TPR:38.86112790808046
+.\trained_eomt\1024-t=0.3-r=32-a=64-e=10-no_load.ckpt
+.\Validation_Dataset\fs_static\images\*.jpg
+    [MSP] AUPRC score:49.081791375618096   FPR@95TPR:43.14694422810048    [Max_Logit] AUPRC score:49.2248006699248   FPR@95TPR:42.96853590342755    [Max_Entropy] AUPRC score:42.2892397000281   FPR@95TPR:43.058950832908444
+.\trained_eomt\no_lora-t=0.3-e=10-no_load.ckpt
+.\Validation_Dataset\fs_static\images\*.jpg
+    [MSP] AUPRC score:49.51813660686409   FPR@95TPR:73.60997886168494    [Max_Logit] AUPRC score:49.97803010662232   FPR@95TPR:73.56215484795217    [Max_Entropy] AUPRC score:46.68093581756575   FPR@95TPR:73.58054666234902
+.\trained_eomt\no_lora-t=0.01-e=10-no_load.ckpt
+.\Validation_Dataset\fs_static\images\*.jpg
+    [MSP] AUPRC score:53.74064679221573   FPR@95TPR:67.76600142142738    [Max_Logit] AUPRC score:53.72467583638758   FPR@95TPR:68.11773842698176    [Max_Entropy] AUPRC score:51.69519312057857   FPR@95TPR:65.07287406984051
+.\trained_eomt\no_lora-t=0.005-e=10-no_load.ckpt
+.\Validation_Dataset\fs_static\images\*.jpg
+    [MSP] AUPRC score:51.91885534056352   FPR@95TPR:60.79523976110585    [Max_Logit] AUPRC score:51.92517849370854   FPR@95TPR:68.13916970005111    [Max_Entropy] AUPRC score:49.624173382005424   FPR@95TPR:61.75977562788195
+.\trained_eomt\eomt_cityscapes.bin
+.\Validation_Dataset\fs_static\images\*.jpg
+    [MSP] AUPRC score:54.39476021293911   FPR@95TPR:35.180263047224756    [Max_Logit] AUPRC score:54.535477536031806   FPR@95TPR:34.81427285972913    [Max_Entropy] AUPRC score:52.80890566719537   FPR@95TPR:35.09187584527838
+.\trained_eomt\eomt_cityscapes.bin
+.\Validation_Dataset\fs_static\images\*.jpg
+    [MSP] AUPRC score:58.192135249505405   FPR@95TPR:43.46494223348184    [Max_Logit] AUPRC score:58.371760974862866   FPR@95TPR:46.91914871166078    [Max_Entropy] AUPRC score:57.01494786491941   FPR@95TPR:43.77732093222752
+.\trained_eomt\no_lora-t=0.3-e=10-no_load-upscale.ckpt
+.\Validation_Dataset\fs_static\images\*.jpg
+    [MSP] AUPRC score:58.69923048809659   FPR@95TPR:74.72408505181988    [Max_Logit] AUPRC score:59.52291113069235   FPR@95TPR:75.66820535588892    [Max_Entropy] AUPRC score:58.81261382396197   FPR@95TPR:74.70815312244157
+.\trained_eomt\no_lora-t=0.7-no_load-upscale.ckpt
+.\Validation_Dataset\fs_static\images\*.jpg
+    [MSP] AUPRC score:58.54590573056527   FPR@95TPR:75.97651621594214    [Max_Logit] AUPRC score:59.7077595624228   FPR@95TPR:77.65437502030056    [Max_Entropy] AUPRC score:58.79505312944789   FPR@95TPR:75.95939228675527

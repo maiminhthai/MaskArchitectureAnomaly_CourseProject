@@ -1,0 +1,4 @@
+
+trained_eomt/eomt_cityscapes.bin
+Validation_Dataset/RoadAnomaly21/images/*.png
+    [MSP] AUPRC score:68.09707381745827   FPR@95TPR:30.421561219925042    [Max_Logit] AUPRC score:67.55700005976055   FPR@95TPR:31.590184553241407    [Max_Entropy] AUPRC score:68.22738964480534   FPR@95TPR:30.61764188054151

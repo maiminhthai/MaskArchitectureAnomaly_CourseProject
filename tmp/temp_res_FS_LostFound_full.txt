@@ -1,0 +1,46 @@
+
+.\trained_eomt\1024-t=0.3-r=8-epoch=10.ckpt
+.\Validation_Dataset\FS_LostFound_full\images\*.png
+    [MSP] AUPRC score:18.4521499001635   FPR@95TPR:15.132038491501998    [Max_Logit] AUPRC score:18.46081245953002   FPR@95TPR:14.903805741544351    [Max_Entropy] AUPRC score:21.843266216979714   FPR@95TPR:14.993386933810497
+.\trained_eomt\eomt_cityscapes.bin
+.\Validation_Dataset\FS_LostFound_full\images\*.png
+    [MSP] AUPRC score:25.370417778987907   FPR@95TPR:14.886180675364107    [Max_Logit] AUPRC score:25.397872677315263   FPR@95TPR:14.629279450154648    [Max_Entropy] AUPRC score:27.95504347088112   FPR@95TPR:14.701562788800999
+.\trained_eomt\1024-t=0.3-r=16-a=16-epoch=10.ckpt
+.\Validation_Dataset\FS_LostFound_full\images\*.png
+    [MSP] AUPRC score:18.2794102187522   FPR@95TPR:14.62568634630631    [Max_Logit] AUPRC score:18.289094075065226   FPR@95TPR:14.405435659091653    [Max_Entropy] AUPRC score:21.353242073555275   FPR@95TPR:14.484611836307248
+.\trained_eomt\1024-t=0.3-r=32-a=64-epoch=10.ckpt
+.\Validation_Dataset\FS_LostFound_full\images\*.png
+    [MSP] AUPRC score:18.824383294348507   FPR@95TPR:14.896905362420709    [Max_Logit] AUPRC score:18.843941753749093   FPR@95TPR:14.641804964095384    [Max_Entropy] AUPRC score:22.312500021842745   FPR@95TPR:14.717031236637656
+.\trained_eomt\1024-t=0.04-r=32-a=64-epoch=10.ckpt
+.\Validation_Dataset\FS_LostFound_full\images\*.png
+    [MSP] AUPRC score:21.326034378279672   FPR@95TPR:14.122889067817072    [Max_Logit] AUPRC score:21.35949052106071   FPR@95TPR:13.548897081110775    [Max_Entropy] AUPRC score:23.898329290655536   FPR@95TPR:13.91941486723013
+.\trained_eomt\1024-t=0.01-r=32-a=64-epoch=10.ckpt
+.\Validation_Dataset\FS_LostFound_full\images\*.png
+    [MSP] AUPRC score:20.96423135383738   FPR@95TPR:14.02543328055143    [Max_Logit] AUPRC score:20.984312341570163   FPR@95TPR:13.716106083843957    [Max_Entropy] AUPRC score:23.811205343143666   FPR@95TPR:13.83877439747852
+.\trained_eomt\1024-t=0.3-r=32-a=64-e=10-no_load.ckpt
+.\Validation_Dataset\FS_LostFound_full\images\*.png
+    [MSP] AUPRC score:19.948248032636045   FPR@95TPR:16.264027820964433    [Max_Logit] AUPRC score:19.98215786527736   FPR@95TPR:16.036803011566793    [Max_Entropy] AUPRC score:21.962302541231455   FPR@95TPR:16.10762591701601
+.\trained_eomt\no_lora-t=0.3-e=10-no_load.ckpt
+.\Validation_Dataset\FS_LostFound_full\images\*.png
+    [MSP] AUPRC score:18.781464533894997   FPR@95TPR:44.05566544115833    [Max_Logit] AUPRC score:18.96549707270177   FPR@95TPR:48.76668592575712    [Max_Entropy] AUPRC score:22.317431464771527   FPR@95TPR:44.01143872411915
+.\trained_eomt\no_lora-t=0.01-e=10-no_load.ckpt
+.\Validation_Dataset\FS_LostFound_full\images\*.png
+    [MSP] AUPRC score:21.991424824860953   FPR@95TPR:15.307162226358773    [Max_Logit] AUPRC score:22.072934073796986   FPR@95TPR:15.827663539038667    [Max_Entropy] AUPRC score:24.402840703839782   FPR@95TPR:15.698932619684177
+.\trained_eomt\no_lora-t=0.005-e=10-no_load.ckpt
+.\Validation_Dataset\FS_LostFound_full\images\*.png
+    [MSP] AUPRC score:20.8043910762788   FPR@95TPR:15.838384030301231    [Max_Logit] AUPRC score:20.84482082884358   FPR@95TPR:17.599791488827837    [Max_Entropy] AUPRC score:23.370788193358337   FPR@95TPR:16.78567886037642
+.\trained_eomt\eomt_cityscapes.bin
+.\Validation_Dataset\FS_LostFound_full\images\*.png
+    [MSP] AUPRC score:25.370417778987907   FPR@95TPR:14.886180675364107    [Max_Logit] AUPRC score:25.397872677315263   FPR@95TPR:14.629279450154648    [Max_Entropy] AUPRC score:27.95504347088112   FPR@95TPR:14.701562788800999
+.\trained_eomt\eomt_cityscapes.bin
+.\Validation_Dataset\FS_LostFound_full\images\*.png
+    [MSP] AUPRC score:16.393217130800604   FPR@95TPR:13.01206642873084    [Max_Logit] AUPRC score:16.3777734600967   FPR@95TPR:12.776782573266715    [Max_Entropy] AUPRC score:18.692736253072827   FPR@95TPR:12.82581499690439
+.\trained_eomt\no_lora-t=0.3-e=10-no_load-upscale.ckpt
+.\Validation_Dataset\FS_LostFound_full\images\*.png
+    [MSP] AUPRC score:14.134542374667443   FPR@95TPR:16.23379260979948    [Max_Logit] AUPRC score:14.219853301032625   FPR@95TPR:16.174793435626675    [Max_Entropy] AUPRC score:16.762116163341688   FPR@95TPR:16.096394716316027
+.\trained_eomt\no_lora-t=0.7-no_load-upscale.ckpt
+.\Validation_Dataset\FS_LostFound_full\images\*.png
+    [MSP] AUPRC score:15.13043218149015   FPR@95TPR:15.54689308246385    [Max_Logit] AUPRC score:15.268178301759496   FPR@95TPR:15.167052925673344    [Max_Entropy] AUPRC score:17.49862858619096   FPR@95TPR:15.731124778369546
+.\trained_eomt\no_lora-t=0.005-no_load.ckpt
+.\Validation_Dataset\FS_LostFound_full\images\*.png
+    [MSP] AUPRC score:14.560087896673485   FPR@95TPR:18.057720067059694    [Max_Logit] AUPRC score:14.565566889233342   FPR@95TPR:18.549516559931433    [Max_Entropy] AUPRC score:17.343032851567557   FPR@95TPR:18.45574996056453

@@ -1,0 +1,22 @@
+
+.\trained_eomt\no_lora-t=0.005-no_load.ckpt
+.\Validation_Dataset\FS_LostFound_full\images\*.png
+    [MSP] AUPRC score:14.560087896673485   FPR@95TPR:18.057720067059694    [Max_Logit] AUPRC score:14.565566889233342   FPR@95TPR:18.549516559931433    [Max_Entropy] AUPRC score:17.343032851567557   FPR@95TPR:18.45574996056453
+.\trained_eomt\no_lora-t=0.01-no_load.ckpt
+.\Validation_Dataset\FS_LostFound_full\images\*.png
+    [MSP] AUPRC score:15.909659436107376   FPR@95TPR:17.22032772106553    [Max_Logit] AUPRC score:15.930161163428643   FPR@95TPR:16.924696194195583    [Max_Entropy] AUPRC score:19.236006468646178   FPR@95TPR:16.984545507906073
+.\trained_eomt\no_lora-t=0.04-no_load.ckpt
+.\Validation_Dataset\FS_LostFound_full\images\*.png
+    [MSP] AUPRC score:14.255508401315057   FPR@95TPR:18.000903162913932    [Max_Logit] AUPRC score:14.181301483036767   FPR@95TPR:18.005976254534705    [Max_Entropy] AUPRC score:16.38772860104268   FPR@95TPR:18.19619079610485
+.\trained_eomt\no_lora-t=0.3-no_load.ckpt
+.\Validation_Dataset\FS_LostFound_full\images\*.png
+    [MSP] AUPRC score:14.044105348382029   FPR@95TPR:25.801996633165963    [Max_Logit] AUPRC score:14.020402821727323   FPR@95TPR:26.216949143585115    [Max_Entropy] AUPRC score:16.4581100186519   FPR@95TPR:25.692735135889293
+.\trained_eomt\no_lora-t=0.7-no_load.ckpt
+.\Validation_Dataset\FS_LostFound_full\images\*.png
+    [MSP] AUPRC score:13.635233627220442   FPR@95TPR:18.692094809779235    [Max_Logit] AUPRC score:13.718032484075819   FPR@95TPR:18.260459299016727    [Max_Entropy] AUPRC score:16.75523576878997   FPR@95TPR:19.439247820273277
+.\trained_eomt\no_lora-t=1.2-no_load.ckpt
+.\Validation_Dataset\FS_LostFound_full\images\*.png
+    [MSP] AUPRC score:13.990529973414542   FPR@95TPR:20.893999501785803    [Max_Logit] AUPRC score:14.04982885363897   FPR@95TPR:20.877703609754263    [Max_Entropy] AUPRC score:16.75679981266663   FPR@95TPR:20.771094883784425
+.\trained_eomt\eomt_cityscapes.bin
+.\Validation_Dataset\FS_LostFound_full\images\*.png
+    [MSP] AUPRC score:16.393217130800604   FPR@95TPR:13.01206642873084    [Max_Logit] AUPRC score:16.3777734600967   FPR@95TPR:12.776782573266715    [Max_Entropy] AUPRC score:18.692736253072827   FPR@95TPR:12.82581499690439
