@@ -9,7 +9,7 @@ def main():
     parser = argparse.ArgumentParser(description="Run Anomaly Evaluation on multiple datasets")
     parser.add_argument("--ckpt_path", required=True, help="Path to the model checkpoint (.ckpt or .bin)")
     parser.add_argument("--dataset_root", required=True, help="Path to the folder containing the datasets (e.g. Validation_Dataset)")
-    parser.add_argument("--result_dir", default="result-1024x1024", help="Directory to save the results")
+    parser.add_argument("--result_dir", default="tmp", help="Directory to save the results")
     parser.add_argument("--img_height", type=int, default=1024, help="Image height for evaluation")
     parser.add_argument("--img_width", type=int, default=1024, help="Image width for evaluation")
     parser.add_argument("--script", default="evalAnomalyEomt_window.py", help="Path to the evaluation script")
@@ -31,13 +31,14 @@ def main():
     dataset_order = ["SMIYC RA-21", "SMIYC RO-21", "FS L&F", "FS Static", "Road Anomaly"]
 
     # Methods to evaluate (must match keys in evalAnomalyEomt.py)
-    methods_keys = ["MSP", "Max_Logit", "Max_Entropy"]
+    methods_keys = ["MSP", "Max_Logit", "Max_Entropy", "RbA"]
     
     # Mapping to display names
     method_display_map = {
         "MSP": "MSP",
         "Max_Logit": "MaxLogit",
-        "Max_Entropy": "Max Entropy"
+        "Max_Entropy": "Max Entropy",
+        "RbA": "RbA"
     }
 
     # Store results: results[Method][Dataset][Metric] = value

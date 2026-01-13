@@ -88,7 +88,8 @@ def compute_scores(per_pixel_logits: torch.Tensor):
     max_logit = 1.0 - torch.max(per_pixel_logits, dim=0).values
     log_probs = torch.log_softmax(per_pixel_logits, dim=0)
     entropy = -(probs * log_probs).sum(dim=0)
-    return msp.cpu().numpy(), max_logit.cpu().numpy(), entropy.cpu().numpy()
+    rba = -torch.tanh(per_pixel_logits).sum(dim=0)
+    return msp.cpu().numpy(), max_logit.cpu().numpy(), entropy.cpu().numpy(), rba.cpu().numpy()
 
 
 def load_mask(path: str, target_transform):
@@ -167,7 +168,7 @@ def main():
 
     model = build_model(args, device)
 
-    msp_score_list, max_logit_score_list, max_entropy_score_list, ood_gts_list = [], [], [], []
+    msp_score_list, max_logit_score_list, max_entropy_score_list, rba_score_list, ood_gts_list = [], [], [], [], []
 
     for path in glob.glob(os.path.expanduser(str(args.input[0]))):
         print(path)
@@ -188,7 +189,7 @@ def main():
         )
         
         per_pixel_logits = to_per_pixel_logits(mask_logits, class_logits).squeeze(0)
-        msp_score, max_logit_score, max_entropy_score = compute_scores(per_pixel_logits)
+        msp_score, max_logit_score, max_entropy_score, rba_score = compute_scores(per_pixel_logits)
 
         pathGT = path.replace("images", "labels_masks")
         if "RoadObsticle21" in pathGT:
@@ -207,6 +208,7 @@ def main():
         msp_score_list.append(msp_score)
         max_logit_score_list.append(max_logit_score)
         max_entropy_score_list.append(max_entropy_score)
+        rba_score_list.append(rba_score)
 
         del mask_logits, class_logits, per_pixel_logits
         torch.cuda.empty_cache()
@@ -224,6 +226,7 @@ def main():
         "MSP": np.array(msp_score_list),
         "Max_Logit": np.array(max_logit_score_list),
         "Max_Entropy": np.array(max_entropy_score_list),
+        "RbA": np.array(rba_score_list),
     }
 
     ood_mask = ood_gts == 1

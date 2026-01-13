@@ -885,7 +885,6 @@ class LightningModule(lightning.LightningModule):
             ckpt = ckpt["state_dict"]
         
         # FIX: Remap keys if necessary
-        #ckpt = fix_state_dict_keys(ckpt, self)
         
         ckpt = {k: v for k, v in ckpt.items() if "criterion.empty_weight" not in k}
         if not load_ckpt_class_head:
