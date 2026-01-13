@@ -7,3 +7,4 @@ leftImg8bit_trainvaltest
 cityscapes
 trained_models
 trained_eomt
+wandb

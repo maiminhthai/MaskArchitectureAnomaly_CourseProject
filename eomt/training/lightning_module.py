@@ -35,7 +35,6 @@ from torchvision.transforms.v2.functional import pad
 import logging
 
 from training.two_stage_warmup_poly_schedule import TwoStageWarmupPolySchedule
-from training.utils.checkpoint import fix_state_dict_keys
 
 bold_green = "\033[1;32m"
 reset = "\033[0m"
