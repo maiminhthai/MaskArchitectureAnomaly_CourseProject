@@ -1,8 +1,3 @@
-# ---------------------------------------------------------------
-# © 2025 Mobile Perception Systems Lab at TU/e. All rights reserved.
-# Licensed under the MIT License.
-# ---------------------------------------------------------------
-
 import os
 os.environ.setdefault("KMP_DUPLICATE_LIB_OK", "TRUE")
 import torch

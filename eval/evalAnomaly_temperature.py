@@ -89,9 +89,9 @@ def main():
     score_lists = {t: [] for t in temperatures}
     ood_gts_list = []
 
-    if not os.path.exists('results.txt'):
-        open('results.txt', 'w').close()
-    file = open('results.txt', 'a')
+    if not os.path.exists('tmp.txt'):
+        open('tmp.txt', 'w').close()
+    file = open('tmp.txt', 'a')
 
     modelpath = args.loadDir + args.loadModel
     weightspath = args.loadDir + args.loadWeights
