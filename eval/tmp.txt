@@ -1,0 +1,8 @@
+
+
+
+..\Validation_Dataset\FS_LostFound_full\images\*.png
+
+..\Validation_Dataset\FS_LostFound_full\images\*.png
+    [MSP T=0.5] AUPRC score:1.8615218635105162   FPR@TPR95:50.18462662678511    [MSP T=0.75] AUPRC score:1.8615218635105162   FPR@TPR95:50.18462662678511    [MSP T=1.0] AUPRC score:1.8615218635105162   FPR@TPR95:50.18462662678511    [MSP T=1.1] AUPRC score:1.8615218635105162   FPR@TPR95:50.18462662678511
+..\Validation_Dataset\FS_LostFound_full\images\*.png
