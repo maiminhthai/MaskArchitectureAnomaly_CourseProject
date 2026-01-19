@@ -38,9 +38,8 @@ class LogitNormMaskClassificationLoss(MaskClassificationLoss):
             pred_logits_transposed, 
             target_classes, 
             weight=self.empty_weight,
-            ignore_index=-1 # Mask2Former usually uses a specific index or handled by empty_weight for eos
+            ignore_index=-1 
         )
-        # Note: self.empty_weight handles the eos_coef (no object).
         
         losses = {"loss_cross_entropy": loss_ce}
         return losses

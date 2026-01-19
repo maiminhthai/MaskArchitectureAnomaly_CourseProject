@@ -4,7 +4,6 @@ import torch
 import logging
 from lightning.pytorch import cli
 from lightning.pytorch.callbacks import ModelSummary, LearningRateMonitor
-
 from training.lightning_module import LightningModule
 from datasets.lightning_data_module import LightningDataModule
 from training.mask_classification_semantic import MaskClassificationSemantic
