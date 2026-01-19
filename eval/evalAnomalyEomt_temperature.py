@@ -75,7 +75,7 @@ def compute_scores(per_pixel_logits: torch.Tensor):
         probs = F.softmax(scaled_logits, dim=0)
         msp = 1.0 - torch.max(probs, dim=0).values
         msp_scores[t] = msp.cpu().numpy()
-        
+    
     return msp_scores
 
 
@@ -247,7 +247,7 @@ def main():
         file.write(
             f"    [MSP T={t}] AUPRC score:{prc_auc * 100.0}   FPR@95TPR:{fpr * 100.0}"
         )
-
+        file.write("\n")
     file.close()
 
 

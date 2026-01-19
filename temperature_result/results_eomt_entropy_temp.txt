@@ -1,0 +1,35 @@
+
+trained_eomt\eomt_cityscapes.bin
+Validation_Dataset\FS_LostFound_full\images\*.png
+    [Entropy T=0.5] AUPRC score:18.344703251634495   FPR@95TPR:12.898533921946948
+    [Entropy T=0.75] AUPRC score:18.548896936248337   FPR@95TPR:12.858024482246714
+    [Entropy T=1.0] AUPRC score:18.692736253072827   FPR@95TPR:12.82581499690439
+    [Entropy T=1.1] AUPRC score:18.69452358493681   FPR@95TPR:12.816742514636525
+
+trained_eomt\eomt_cityscapes.bin
+Validation_Dataset\fs_static\images\*.jpg
+    [Entropy T=0.5] AUPRC score:57.90142502510468   FPR@95TPR:43.47127174140249
+    [Entropy T=0.75] AUPRC score:57.44863715113537   FPR@95TPR:43.59051764312731
+    [Entropy T=1.0] AUPRC score:57.01494786491941   FPR@95TPR:43.77732093222752
+    [Entropy T=1.1] AUPRC score:56.85374892861822   FPR@95TPR:43.84507557600799
+
+trained_eomt\eomt_cityscapes.bin
+Validation_Dataset\RoadAnomaly\images\*.jpg
+    [Entropy T=0.5] AUPRC score:74.18512972969016   FPR@95TPR:14.860058981030273
+    [Entropy T=0.75] AUPRC score:73.88175679505741   FPR@95TPR:14.749362182316311
+    [Entropy T=1.0] AUPRC score:73.43416461734972   FPR@95TPR:14.688830095280162
+    [Entropy T=1.1] AUPRC score:73.30466177356037   FPR@95TPR:14.671029459080573
+
+trained_eomt\eomt_cityscapes.bin
+Validation_Dataset\RoadAnomaly21\images\*.png
+    [Entropy T=0.5] AUPRC score:68.57691791062801   FPR@95TPR:30.40203060689915
+    [Entropy T=0.75] AUPRC score:68.37219492180009   FPR@95TPR:30.46672191409464
+    [Entropy T=1.0] AUPRC score:68.22738964480534   FPR@95TPR:30.61764188054151
+    [Entropy T=1.1] AUPRC score:68.17697564659862   FPR@95TPR:30.673570810793922
+
+trained_eomt\eomt_cityscapes.bin
+Validation_Dataset\RoadObsticle21\images\*.webp
+    [Entropy T=0.5] AUPRC score:94.2769059208162   FPR@95TPR:0.3539903601820773
+    [Entropy T=0.75] AUPRC score:94.28714282348277   FPR@95TPR:0.35061344057966615
+    [Entropy T=1.0] AUPRC score:94.28293863266241   FPR@95TPR:0.3488443785436851
+    [Entropy T=1.1] AUPRC score:94.29118333715564   FPR@95TPR:0.3482325343069804

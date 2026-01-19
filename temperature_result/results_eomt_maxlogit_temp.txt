@@ -1,0 +1,35 @@
+
+trained_eomt\eomt_cityscapes.bin
+Validation_Dataset\FS_LostFound_full\images\*.png
+    [Max_Logit T=0.5] AUPRC score:16.377309796968913   FPR@95TPR:12.776782573266715
+    [Max_Logit T=0.75] AUPRC score:16.37754061797126   FPR@95TPR:12.776782573266715
+    [Max_Logit T=1.0] AUPRC score:16.3777734600967   FPR@95TPR:12.776782573266715
+    [Max_Logit T=1.1] AUPRC score:16.377866097565256   FPR@95TPR:12.776782573266715
+
+trained_eomt\eomt_cityscapes.bin
+Validation_Dataset\fs_static\images\*.jpg
+    [Max_Logit T=0.5] AUPRC score:58.371766970731066   FPR@95TPR:46.91914871166078
+    [Max_Logit T=0.75] AUPRC score:58.371754150203216   FPR@95TPR:46.91914871166078
+    [Max_Logit T=1.0] AUPRC score:58.371760974862866   FPR@95TPR:46.91914871166078
+    [Max_Logit T=1.1] AUPRC score:58.371757623225186   FPR@95TPR:46.91914871166078
+
+trained_eomt\eomt_cityscapes.bin
+Validation_Dataset\RoadAnomaly\images\*.jpg
+    [Max_Logit T=0.5] AUPRC score:70.79432616823622   FPR@95TPR:15.062979358284354
+    [Max_Logit T=0.75] AUPRC score:70.80689229783027   FPR@95TPR:15.062977586287058
+    [Max_Logit T=1.0] AUPRC score:70.81922454400397   FPR@95TPR:15.062979358284354
+    [Max_Logit T=1.1] AUPRC score:70.82411267998664   FPR@95TPR:15.062977586287058
+
+trained_eomt\eomt_cityscapes.bin
+Validation_Dataset\RoadAnomaly21\images\*.png
+    [Max_Logit T=0.5] AUPRC score:67.52841374856645   FPR@95TPR:31.590184553241407
+    [Max_Logit T=0.75] AUPRC score:67.54351459699956   FPR@95TPR:31.59022265681186
+    [Max_Logit T=1.0] AUPRC score:67.55700005976055   FPR@95TPR:31.590184553241407
+    [Max_Logit T=1.1] AUPRC score:67.5621994156023   FPR@95TPR:31.590184553241407
+
+trained_eomt\eomt_cityscapes.bin
+Validation_Dataset\RoadObsticle21\images\*.webp
+    [Max_Logit T=0.5] AUPRC score:94.22543820825034   FPR@95TPR:0.36246406265619957
+    [Max_Logit T=0.75] AUPRC score:94.22543764774906   FPR@95TPR:0.36246406265619957
+    [Max_Logit T=1.0] AUPRC score:94.22543792637097   FPR@95TPR:0.36246406265619957
+    [Max_Logit T=1.1] AUPRC score:94.22543762499177   FPR@95TPR:0.36246406265619957

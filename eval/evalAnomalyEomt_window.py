@@ -128,8 +128,8 @@ def main():
     )
     parser.add_argument("--ckpt_path", required=True, help="Path to EoMT checkpoint (.ckpt or .bin)")
 
-    parser.add_argument("--img_height", type=int, default=640)
-    parser.add_argument("--img_width", type=int, default=640)
+    parser.add_argument("--img_height", type=int, default=1024)
+    parser.add_argument("--img_width", type=int, default=1024)
     parser.add_argument("--num_classes", type=int, default=19)
     parser.add_argument("--num_queries", type=int, default=100)
     parser.add_argument("--num_blocks", type=int, default=3)
@@ -241,6 +241,7 @@ def main():
         file.write(
             f"    [{name}] AUPRC score:{prc_auc * 100.0}   FPR@95TPR:{fpr * 100.0}"
         )
+        file.write("\n")
 
     file.close()
 

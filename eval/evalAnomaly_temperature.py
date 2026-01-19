@@ -81,6 +81,7 @@ def main():
     parser.add_argument('--datadir', default="/home/shyam/ViT-Adapter/segmentation/data/cityscapes/")
     parser.add_argument('--num-workers', type=int, default=4)
     parser.add_argument('--batch-size', type=int, default=1)
+    parser.add_argument('--result_file', type=str, default='results_erfnet_entropy_temp.txt')
     parser.add_argument('--cpu', action='store_true')
     args = parser.parse_args()
     
@@ -89,9 +90,9 @@ def main():
     score_lists = {t: [] for t in temperatures}
     ood_gts_list = []
 
-    if not os.path.exists('tmp.txt'):
-        open('tmp.txt', 'w').close()
-    file = open('tmp.txt', 'a')
+    if not os.path.exists(args.result_file):
+        open(args.result_file, 'w').close()
+    file = open(args.result_file, 'a')
 
     modelpath = args.loadDir + args.loadModel
     weightspath = args.loadDir + args.loadWeights
@@ -159,11 +160,10 @@ def main():
              # Calculate MSP for each temperature and append only if valid ood found
              for t in temperatures:
                 scaled_logits = logits / t
-                probs = F.softmax(scaled_logits, dim=0)
-                msp_score = 1.0 - np.max(probs.cpu().numpy(), axis=0)
-                score_lists[t].append(msp_score)
+                max_logit = 1.0 - torch.max(scaled_logits, dim=0).values
+                score_lists[t].append(max_logit.cpu().numpy())
         
-        del logits, probs, msp_score, ood_gts, mask
+        del logits, max_logit, ood_gts, mask
         torch.cuda.empty_cache()
 
     file.write( "\n")
@@ -189,10 +189,11 @@ def main():
         prc_auc = average_precision_score(val_label, val_out)
         fpr = fpr_at_95_tpr(val_out, val_label)
 
-        print(f'[MSP T={t}] AUPRC score: {prc_auc*100.0}')
-        print(f'[MSP T={t}] FPR@TPR95: {fpr*100.0}')
+        print(f'[Entropy T={t}] AUPRC score: {prc_auc*100.0}')
+        print(f'[Entropy T={t}] FPR@TPR95: {fpr*100.0}')
 
-        file.write((f'    [MSP T={t}] AUPRC score:' + str(prc_auc*100.0) + '   FPR@TPR95:' + str(fpr*100.0) ))
+        file.write((f'    [Entropy T={t}] AUPRC score:' + str(prc_auc*100.0) + '   FPR@TPR95:' + str(fpr*100.0) ))
+        file.write( "\n")
     
     file.close()
 
