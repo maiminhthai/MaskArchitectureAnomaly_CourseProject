@@ -1,6 +1,0 @@
-
-trained_eomt/1024-t=0.3-r=16-a=16-epoch=10.ckpt
-Validation_Dataset/RoadAnomaly/images/*.jpg
-    [MSP] AUPRC score:57.44456720659418   FPR@95TPR:19.30109905563256    [Max_Logit] AUPRC score:57.15253800448671   FPR@95TPR:19.056244541632537    [Max_Entropy] AUPRC score:55.31260244270244   FPR@95TPR:19.09441710233402
-trained_eomt/1024-t=0.3-r=16-a=16-epoch=10.ckpt
-Validation_Dataset/RoadAnomaly/images/*.jpg
