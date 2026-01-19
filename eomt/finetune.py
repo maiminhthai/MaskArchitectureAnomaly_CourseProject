@@ -71,7 +71,8 @@ class FinetuneCLI(LightningCLI):
         )
 
         if not self.config[self.config["subcommand"]]["compile_disabled"]:
-            model = torch.compile(model)
+            #model = torch.compile(model)
+            pass
 
         self.trainer.fit(model, **kwargs)
 
