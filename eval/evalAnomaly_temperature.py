@@ -160,10 +160,11 @@ def main():
              # Calculate MSP for each temperature and append only if valid ood found
              for t in temperatures:
                 scaled_logits = logits / t
-                max_logit = 1.0 - torch.max(scaled_logits, dim=0).values
-                score_lists[t].append(max_logit.cpu().numpy())
+                probs = F.softmax(scaled_logits, dim=0)
+                msp_score = 1.0 - np.max(probs.cpu().numpy(), axis=0)
+                score_lists[t].append(msp_score)
         
-        del logits, max_logit, ood_gts, mask
+        del logits, scaled_logits, probs, msp_score, ood_gts, mask
         torch.cuda.empty_cache()
 
     file.write( "\n")
