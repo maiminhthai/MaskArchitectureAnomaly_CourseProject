@@ -32,7 +32,7 @@ class FinetuneCLI(LightningCLI):
         for param in model.network.parameters():
             param.requires_grad = False
                 
-        # Unfreeze heads
+        # Unfreeze targeted modules
         for module_name in targets:
             if hasattr(model.network, module_name):
                 logging.info(f"Unfreezing {module_name}")
