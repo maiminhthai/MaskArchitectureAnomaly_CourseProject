@@ -91,9 +91,9 @@ def cli_main():
                 ModelSummary(max_depth=3),
                 LearningRateMonitor(logging_interval="epoch"),
                 ModelCheckpoint(
-                    save_top_k=1,        # Only keep the single latest checkpoint
-                    every_n_epochs=1,    # Trigger saving every epoch
-                    monitor=None,        # Do not monitor metrics (implies "latest is best")
+                    save_top_k=1,        
+                    every_n_epochs=1,    
+                    monitor=None,        
                     filename="{epoch}-{step}",
                 ),
             ],
