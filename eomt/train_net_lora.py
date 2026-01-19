@@ -69,8 +69,8 @@ class LoRACLI(LightningCLI):
             )
 
         # Original fit logic (logging code, etc.)
+        from gitignore_parser import parse_gitignore
         if self.trainer.logger is not None and hasattr(self.trainer.logger, "experiment") and hasattr(self.trainer.logger.experiment, "log_code"):
-            from gitignore_parser import parse_gitignore
             is_gitignored = parse_gitignore(".gitignore")
             include_fn = lambda path: path.endswith(".py") or path.endswith(".yaml")
             self.trainer.logger.experiment.log_code(
