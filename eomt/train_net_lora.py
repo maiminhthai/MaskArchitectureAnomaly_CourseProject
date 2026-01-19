@@ -84,9 +84,8 @@ class LoRACLI(LightningCLI):
             _should_check_val_fx, self.trainer.fit_loop.epoch_loop
         )
 
-        if not config.get("compile_disabled", False):
-            # model = torch.compile(model)
-            pass
+        if not self.config[self.config["subcommand"]]["compile_disabled"]:
+            model = torch.compile(model)
 
         self.trainer.fit(model, **kwargs)
 

@@ -55,8 +55,8 @@ class FinetuneCLI(LightningCLI):
             )
 
         # Original fit logic (logging code, etc.)
+        from gitignore_parser import parse_gitignore
         if self.trainer.logger is not None and hasattr(self.trainer.logger, "experiment") and hasattr(self.trainer.logger.experiment, "log_code"):
-            from gitignore_parser import parse_gitignore
             is_gitignored = parse_gitignore(".gitignore")
             include_fn = lambda path: path.endswith(".py") or path.endswith(".yaml")
             self.trainer.logger.experiment.log_code(
@@ -70,9 +70,8 @@ class FinetuneCLI(LightningCLI):
             _should_check_val_fx, self.trainer.fit_loop.epoch_loop
         )
 
-        if not config.get("compile_disabled", False):
-            # model = torch.compile(model)
-            pass
+        if not self.config[self.config["subcommand"]]["compile_disabled"]:
+            model = torch.compile(model)
 
         self.trainer.fit(model, **kwargs)
 
